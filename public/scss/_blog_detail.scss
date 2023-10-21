@@ -1,0 +1,639 @@
+.bg_dark {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0.7;
+  z-index: 7777;
+  top: 0;
+}
+
+.blog_detail {
+  width: 100%;
+  height: auto;
+  position: relative;
+
+  .blog_content {
+    padding: 1rem 5rem;
+    margin-bottom: rem(80);
+
+    @media screen and (max-width: 575.98px) {
+      padding: 1rem;
+    }
+
+    .blog_header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 0;
+
+      @media screen and (max-width: 575.98px) {
+        margin-bottom: 4rem;
+      }
+
+      .title {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+
+
+        .blog_title {
+          h1 {
+            font-size: rem(18);
+            font-family: "iranSans-regular";
+            color: var(--color-darkgreen);
+          }
+        }
+
+        .writer {
+          transition: all .5s;
+
+          &:hover {
+            color: var(--color-primary);
+          }
+        }
+
+        .category {
+          margin-right: rem(18);
+          transition: all .5s;
+
+          &:hover {
+            color: var(--color-primary);
+          }
+        }
+      }
+
+      @media screen and (max-width: 767.98px) {
+        display: block;
+        text-align: center;
+
+        .title {
+          display: block;
+
+          .blog_title {
+            color: var(--color-darkgreen);
+            h1 {
+              font-size: rem(14);
+            }
+          }
+        }
+
+        .btn_like {
+          margin: 1rem auto;
+        }
+      }
+    }
+
+    .box_img {
+      width: 100%;
+      height: rem(600);
+      position: relative;
+      border-radius: 1rem;
+      margin-bottom: 4rem;
+
+      @media screen and (max-width: 991.98px) {
+        height: auto;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: 1rem;
+      }
+
+      .date_item {
+        width: rem(80);
+        height: rem(80);
+        border-radius: rem(12);
+        background: var(--color-primary);
+        color: #fff;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+        right: 1.5rem;
+        bottom: rem(-40);
+
+        span {
+          font-size: 1rem;
+          font-family: "Vazir-Regular";
+        }
+
+        .day {
+          font-weight: 700;
+          font-size: 1.2rem;
+          font-family: "iranSans-regular";
+        }
+
+        @media screen and (max-width: 767.98px) {
+          width: 5rem;
+          height: 5rem;
+          bottom: rem(-30);
+        }
+      }
+    }
+
+    .blog_decription {
+      p {
+        line-height: rem(30);
+        text-align: justify;
+      }
+    }
+  }
+
+  .related_blogs {
+    border-top: 1px solid var(--color-darkgreen);
+    position: relative;
+    width: 100%;
+    padding: 4rem 2rem;
+    margin: 0 auto;
+
+    @media (min-width: 1200px) {
+      width: 85%;
+    }
+
+    @media (max-width: 575.98px) {
+      padding: 4rem 0;
+    }
+
+    .related-logo {
+      display: flex;
+      justify-content: center;
+    }
+
+    .logo {
+      width: rem(100);
+      position: absolute;
+      top: rem(-50);
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .title {
+      margin-bottom: 4rem;
+
+      span {
+        font-size: rem(18);
+        font-weight: 600;
+        color: var(--color-darkgreen);
+        font-family: Vazir-Regular;
+      }
+    }
+  }
+}
+
+.blog_icons {
+  position: fixed;
+  top: rem(200);
+  right: 0;
+  padding-right: rem(40);
+  display: flex;
+  flex-direction: column;
+
+  @media (max-width: 575.98px) {
+    position: absolute;
+    top: 20rem;
+    width: 100%;
+    flex-direction: unset;
+    justify-content: space-evenly;
+    padding-right: 0;
+  }
+
+  @media screen and (max-width: 362px) {
+    top: 25rem;
+  }
+
+  .box_icon {
+    width: rem(50);
+    height: rem(50);
+    border: 1px solid #dadada;
+    border-radius: rem(5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: rem(10);
+    position: relative;
+    margin-bottom: 2rem;
+    transition: all .5s;
+    z-index: 33;
+    cursor: pointer;
+
+    .tooltips {
+      display: none;
+      position: absolute;
+      top: rem(8);
+      left: rem(-84);
+      align-items: center;
+      justify-content: center;
+      padding: rem(3) rem(8);
+      background: var(--color-darkgreen);
+      border: 1px solid var(--color-darkgreen);
+      border-radius: rem(5);
+      color: #fff;
+      font-size: rem(12);
+      font-family: "Vazir-Regular";
+      @media screen and (max-width: 575.98px){
+        display: none;
+      }
+      &::before {
+        content: "\f0da";
+        font-family: "Font Awesome 5 Pro";
+        color: var(--color-darkgreen);
+        font-size: rem(26);
+        position: absolute;
+        right: -8px;
+        font-weight: bold;
+      }
+    }
+
+    .circle {
+      width: rem(24);
+      height: rem(24);
+      border: 1px solid #dadada;
+      border-radius: 50%;
+      position: absolute;
+      top: rem(-10);
+      right: rem(-10);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--color-darkgreen);
+      background: #fff;
+    }
+
+    &:hover {
+      background: #f3f3f4;
+      border: 1px solid #f3f3f4;
+    }
+  }
+
+  .comments,
+  .share,
+  .info,
+  .liked {
+
+    &:hover {
+      .tooltips {
+        display: flex;
+        @media screen and (max-width: 575.98px){
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+.modal_blog {
+  width: 40%;
+  background: #fff;
+  margin: rem(200) auto rem(100);
+  border-radius: rem(10);
+  padding: rem(32);
+  padding-bottom: 0;
+  position: relative;
+  top: -55px;
+  z-index: 77777777777777;
+
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    width: 60%;
+  }
+
+  @media (min-width: 576px) and (max-width: 991.98px) {
+    width: 70%;
+  }
+
+  @media screen and (max-width: 575.98px) {
+    width: 85%;
+  }
+
+  .image_box {
+    width: 60%;
+    height: rem(300);
+    margin: rem(-120) auto 0;
+
+    @media screen and (max-width: 767.98px) {
+      width: 85%;
+      height: auto;
+      margin-bottom: rem(40);
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: rem(10);
+    }
+  }
+
+  .share_box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto rem(50);
+
+    @media screen and (max-width: 767.98px) {
+      width: 85%;
+    }
+
+    p {
+      font-size: rem(18);
+      font-weight: 600;
+      margin-bottom: rem(40);
+
+      @media screen and (max-width: 767.98px) {
+        font-size: rem(14);
+      }
+    }
+
+    .share_icons {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+
+      .icon_box {
+        width: rem(64);
+        height: rem(64);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 5px;
+
+        i {
+          font-size: rem(24);
+        }
+      }
+
+      .whatsapp {
+        background: #e6fffe;
+        color: #009588;
+      }
+
+      .instagram {
+        background: #fff6fe;
+        color: #ec4899;
+      }
+
+      .telegram {
+        background: #f4fafe;
+        color: #1da1f2;
+      }
+    }
+
+    .copy_link {
+      width: 100%;
+      text-align: right;
+      margin-top: rem(64);
+
+      .link {
+        display: flex;
+        justify-content: start;
+        width: 100%;
+        background: #fafafa;
+        margin-bottom: 30px;
+        padding: 5px;
+
+        @media (min-width: 768px) and (max-width: 991.98px) {
+          // flex-direction: column;
+        }
+
+        @media screen and (max-width: 575.98px) {
+          // flex-direction: column;
+        }
+
+        .btn_copy {
+          background: #fafafa;
+          color: var(--color-primary);
+          padding: rem(5) rem(10);
+          padding-left: rem(20);
+          border: unset;
+          width: 15%;
+          font-weight: bold;
+        }
+
+        input {
+          padding: rem(5) rem(10);
+          border: unset;
+          width: 85%;
+          outline: none;
+          background: #fafafa;
+
+          &::placeholder {
+            font-size: rem(13);
+          }
+        }
+      }
+    }
+  }
+
+  .close {
+    top: rem(15);
+    left: rem(15);
+  }
+}
+
+.detail {
+  width: 80%;
+  margin: 0 auto rem(50);
+
+  p {
+    font-size: rem(18);
+    font-weight: 600;
+    margin-bottom: rem(26);
+    font-family: "Vazir-Bold";
+
+    @media screen and (max-width: 767.98px) {
+      font-size: rem(14);
+    }
+  }
+
+  span {
+    color: var(--color-darkgreen);
+  }
+
+  .detail_box {
+    display: flex;
+    justify-content: space-around;
+    margin-top: rem(20);
+
+    .d_items {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      span {
+        margin-bottom: rem(12);
+        font-family: "Vazir-Regular";
+      }
+
+      .circle {
+        width: rem(60);
+        height: rem(60);
+        padding: rem(5);
+        border-radius: 50%;
+        background-color: var(--color-darkgreen);
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: "iranSans-regular";
+      }
+    }
+  }
+
+  .tags {
+    margin-top: rem(20);
+    padding-bottom: rem(18);
+
+    .tag_item {
+      margin-top: rem(12);
+      display: flex;
+      flex-wrap: wrap;
+
+      a {
+        border: 1px solid #dbdbde;
+        border-radius: rem(3);
+        padding: rem(5) rem(15);
+        margin-left: rem(10);
+        margin-bottom: rem(10);
+        transition: all 0.5s;
+
+        &:hover {
+          background: #dbdbdb;
+        }
+      }
+    }
+  }
+}
+
+.modal_comments {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 30%;
+  height: 100vh;
+  background: #fff;
+  z-index: 77777;
+  padding: 3rem 2rem;
+  font-size: rem(15);
+  overflow-y: scroll;
+
+  // overflow-x: ;
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    width: 40%;
+  }
+
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    width: 50%;
+  }
+
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    width: 60%;
+  }
+
+  @media screen and (max-width: 575.98px) {
+    width: 85%;
+  }
+
+  .form_comments {
+    form {
+      .input {
+        display: flex;
+        justify-content: space-between;
+
+        @media screen and (max-width: 575.98px) {
+          display: block;
+        }
+      }
+
+      input,
+      textarea {
+        width: 100%;
+        padding: rem(10) rem(15);
+        background: #f8f8f8;
+        border: unset;
+        border-radius: rem(5);
+        margin-bottom: rem(20);
+        resize: unset;
+
+        &::placeholder {
+          color: #ccc;
+          font-size: rem(13);
+          text-align: right !important;
+        }
+      }
+
+      input {
+        width: 47%;
+
+        @media screen and (max-width: 575.98px) {
+          width: 100%;
+        }
+      }
+
+      .btn_send {
+        padding: rem(10) rem(35);
+        border: unset;
+        border-radius: rem(40);
+        border: 1px solid var(--color-primary);
+        color: var(--color-primary);
+        background: #fff;
+        transition: all .5s;
+        &:hover{
+          color: #fff;
+          background: var(--color-primary);
+        }
+      }
+    }
+  }
+
+  .comments_others {
+    margin-top: rem(30);
+    margin-bottom: rem(30);
+
+    .comment_name {
+      margin-bottom: rem(10);
+
+      span {
+        display: flex;
+        align-items: center;
+
+        &::before {
+          content: url(../images/icons/user.svg);
+          margin-left: rem(5);
+          padding-top: rem(5);
+        }
+      }
+    }
+
+    .comment_content {
+      margin-bottom: rem(10);
+    }
+
+    .comment_date {
+      span {
+        color: var(--text-secondry);
+        font-size: rem(13);
+      }
+    }
+  }
+
+  .close {
+    top: rem(10);
+    left: rem(5);
+  }
+}
+
+.modals {
+  position: fixed;
+  top: 0;
+  z-index: 7778;
+  width: 100%;
+}

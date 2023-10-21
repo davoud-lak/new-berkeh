@@ -1,0 +1,125 @@
+.blog_section {
+  padding-top: 0;
+}
+
+.blog_title {
+  @media screen and (max-width: 767.98px) {
+    margin-top: rem(30);
+  }
+
+  h1 {
+    font-size: rem(35);
+    line-height: rem(50);
+  }
+}
+
+.sidebar {
+  .sidebar_items {
+    width: 80%;
+    margin-bottom: 3rem;
+    border: 1px solid #7ce8dd;
+    border-radius: rem(5);
+    padding: 2rem 1.5rem;
+
+    @media (min-width: 992px) and (max-width: 1199.98px) {
+      width: 90%;
+    }
+
+    @media screen and (max-width: 767.98px) {
+      width: 100%;
+    }
+
+    .search_input {
+      width: 100%;
+      padding: 1rem;
+      padding-right: rem(54);
+      border: 1px solid var(--color-primary);
+      border-radius: rem(5);
+
+      &::placeholder {
+        color: #0b3a4249;
+      }
+    }
+
+    &:first-child {
+      border: unset;
+      padding: unset;
+    }
+  }
+
+  .filters {
+    .filter_title {
+      border-bottom: 1px solid var(--color-primary);
+      padding-bottom: 0.5rem;
+      display: flex;
+      align-items: center;
+
+      span {
+        font-size: rem(18);
+        color: var(--text-secondry);
+        font-family: "Vazir-Bold";
+      }
+
+      &::before {
+        content: url(../images/icons/Iconly-Bulk-Arrow-Left-Square.svg);
+        margin-left: rem(12);
+        margin-top: rem(6);
+      }
+    }
+
+    .ul_filter {
+      margin-top: rem(20);
+
+      .li_filter {
+        margin-bottom: rem(20);
+        // padding: rem(28) 0 0;
+
+        // .label {
+        //   display: flex;
+        //   align-items: center;
+        //   margin-bottom: 0;
+        //   position: relative;
+        //   padding-right: rem(35);
+        //   color: var(--text-secondry);
+        //   &::before {
+        //     content: "";
+        //     border: 1px solid #7ce8dd;
+        //     border-radius: rem(5);
+        //     width: rem(22);
+        //     height: rem(22);
+        //     position: absolute;
+        //     right: 0;
+        //   }
+        // }
+        // .active {
+        //   &::before {
+        //     content: url(../images/icons/Iconly-Bulk-Tick-Square.svg);
+        //     width: 24px;
+        //     border: unset;
+        //     height: 24px;
+        //   }
+        // }
+        .article_title {
+          display: block;
+          font-weight: 600;
+          margin-bottom: rem(10);
+        }
+
+        .article_tag {
+          display: flex;
+          flex-wrap: wrap;
+
+          .tag {
+            color: var(--text-secondry);
+            margin-left: rem(10);
+            transition: all .5s;
+
+            &:hover {
+              color: var(--color-primary);
+            }
+          }
+        }
+      }
+    }
+  }
+}

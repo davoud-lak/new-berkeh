@@ -1,0 +1,9 @@
+<svg id="Iconly_Bulk_Tick_Square" data-name="Iconly/Bulk/Tick Square" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <g id="Tick_Square" data-name="Tick Square" transform="translate(1.584 0.583)">
+    <path id="Fill_4" data-name="Fill 4" d="M2.572,5.143a.69.69,0,0,1-.49-.2L.2,3.062a.693.693,0,0,1,.979-.98L2.572,3.471,5.84.2a.693.693,0,1,1,.979.98L3.062,4.94a.69.69,0,0,1-.49.2" transform="translate(4.905 6.845)" fill="#00d0d8"/>
+    <g id="Ellipse_12" data-name="Ellipse 12" transform="translate(-1.584 -0.583)" fill="#00d0d8" stroke="#00d0d8" stroke-width="1" opacity="0.4">
+      <circle cx="10" cy="10" r="10" stroke="none"/>
+      <circle cx="10" cy="10" r="9.5" fill="none"/>
+    </g>
+  </g>
+</svg>

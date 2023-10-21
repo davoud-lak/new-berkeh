@@ -1,0 +1,45 @@
+#DataTables_Table_0_filter {
+    display: none;
+}
+
+.dataTables_length {
+    display: none;
+}
+
+.seo_table .form-inline {
+    display: unset;
+}
+
+div.dataTables_wrapper div.dataTables_paginate ul.pagination {
+    justify-content: flex-start;
+    direction: ltr;
+}
+
+.paginate_button a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border: 1px solid var(--color-primary);
+    border-left: unset;
+}
+
+.paginate_button.next a {
+    border-radius: 0 .2rem .2rem 0;
+    border-left: unset;
+}
+
+.paginate_button.previous a {
+    border-radius: .2rem 0 0 .2rem;
+    border: 1px solid var(--color-primary);
+}
+
+.paginate_button.disabled a {
+    cursor: not-allowed;
+}
+
+.paginate_button.active {
+    background: var(--color-primary);
+    color: #fff;
+}

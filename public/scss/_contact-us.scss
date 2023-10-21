@@ -1,0 +1,140 @@
+.contact_page {
+  width: 100%;
+  height: auto;
+  position: relative;
+  padding-top: rem(50);
+
+  .contact_form {
+    width: 100%;
+    margin-top: rem(60);
+    padding-bottom: rem(40);
+
+    .form_item {
+      width: 100%;
+      margin-bottom: rem(20);
+
+      @media screen and (max-width: 767.98px) {
+        margin-bottom: rem(15);
+      }
+
+      label {
+        color: var(--text-secondry);
+        margin-bottom: rem(5);
+      }
+
+      input,
+      textarea {
+        width: 100%;
+        border: 1px solid #ccc;
+        border-radius: rem(5);
+        padding: rem(10) rem(15);
+      }
+
+      textarea {
+        resize: unset;
+
+        @media (min-width:576px) and (max-width: 767.98px) {
+          height: rem(220);
+        }
+
+        @media screen and (max-width: 575.98px) {
+          height: rem(100);
+        }
+      }
+    }
+  }
+}
+
+.map_box {
+  iframe {
+    width: 100%;
+    height: 400px;
+    margin-bottom: rem(60);
+    border: 1px solid var(--color-primary) !important;
+    border-radius: rem(5);
+
+    @media screen and (max-width: 767.98px) {
+      height: rem(200);
+    }
+  }
+}
+
+.contact__us {
+  width: 100%;
+  padding-bottom: rem(60);
+
+  .title {
+    font-size: rem(22);
+    font-family: "Vazir-Bold";
+    margin-bottom: rem(50);
+    color: var(--color-darkgreen);
+    @media screen and (max-width: 575.98px) {
+      margin-bottom: 0;
+    }
+  }
+
+  .dis {
+    align-items: center;
+  }
+
+  .contactus_item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: rem(20);
+
+    span {
+      font-size: rem(16);
+
+      &::before {
+        content: url(../images/icons/Iconly-Bulk-Calling.svg);
+        margin-left: rem(10);
+        position: relative;
+        bottom: rem(-5);
+      }
+    }
+  }
+
+  .address {
+    span {
+      font-size: rem(14);
+
+      &::before {
+        content: url(../images/icons/Iconly-Bulk-Location.svg);
+        margin-left: rem(10);
+        position: relative;
+        bottom: rem(-5);
+      }
+    }
+  }
+
+  .email {
+    span {
+      font-size: rem(14);
+
+      &::before {
+        content: url(../images/icons/Iconly-Bulk-Message.svg);
+        margin-left: rem(15);
+        position: relative;
+        bottom: rem(-5);
+      }
+    }
+  }
+
+  .box-image {
+    width: 100%;
+    height: 100%;
+
+    @media (min-width: 768px) and (max-width: 991.98px) {
+      margin: 0 auto;
+    }
+
+    @media (min-width: 576px) and (max-width: 767.98px) {
+      margin: 0 auto;
+    }
+
+    @media screen and (max-width: 575.98px) {
+      margin: 0 auto;
+    }
+  }
+}

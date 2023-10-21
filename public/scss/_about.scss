@@ -1,0 +1,32 @@
+.about_page {
+  width: 100%;
+  height: auto;
+  position: relative;
+  padding-top: rem(50);
+  .page_title {
+    margin-bottom: rem(80);
+    color: var(--color-darkgreen);
+  }
+  .about_content {
+    padding: 1rem 5rem;
+    @media screen and (max-width: 575.98px) {
+      padding: 1rem;
+    }
+    .logo {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      img {
+        width: 30%;
+      }
+    }
+    .description {
+      margin-top: rem(80);
+      margin-bottom: rem(80);
+      p {
+        line-height: rem(30);
+        text-align: justify;
+      }
+    }
+  }
+}

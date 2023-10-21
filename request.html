@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>request form</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap-reboot.min.css ">
+    <link rel="stylesheet" href="node_modules/select2/dist/css/select2.min.css">
+    <link rel="stylesheet" href="public/css/all.min.css">
+    <link rel="stylesheet" href="public/css/main.min.css">
+</head>
+
+<body>
+    <!-- start menu -->
+    <div class="menu">
+        <menu>
+            <ul class="ul_menu">
+                <li class="li_menu">
+                    <a href="#" class="item_menu">
+                        صفحه اصلی
+                    </a>
+                </li>
+                <li class="li_menu">
+                    <a href="#" class="item_menu">
+                        پورتال
+                    </a>
+                </li>
+                <li class="li_menu">
+                    <a href="#" class="item_menu">
+                        خدمات
+                    </a>
+                </li>
+                <li class="li_menu">
+                    <a href="#" class="item_menu">
+                        درخواست مشاوره
+                    </a>
+                </li>
+                <li class="li_menu">
+                    <a href="#" class="item_menu">
+                        مقالات
+                    </a>
+                </li>
+                <li class="li_menu">
+                    <a href="#" class="item_menu">
+                        درباره ما
+                    </a>
+                </li>
+                <li class="li_menu">
+                    <a href="#" class="item_menu">
+                        تماس با ما
+                    </a>
+                </li>
+            </ul>
+        </menu>
+        <div class="btn close">
+            <i class="fal fa-times"></i>
+        </div>
+    </div>
+    <!-- end menu -->
+    <div class="app">
+        <!-- start header -->
+        <div class="action_bar">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="row align-items-center">
+                            <div class="col-6 col-md-1 align-items-center">
+                                <div class="menu_btn">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
+
+                            <div class="col-6 col-md-11">
+                                <div class="logo">
+                                    <a href="#">
+                                        <img src="public/images/berkehTech.jpg" alt="berkehTech.jpg">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- start breadcrumb -->
+        <div class="container">
+            <nav class="nav_breadcrumb" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">صفحه اصلی</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">درخواست مشاوره</li>
+                </ol>
+            </nav>
+        </div>
+        <!-- end header -->
+        <!-- start section -->
+        <section class="request_page">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="page_title">
+                            <h1>فرم درخواست مشاوره</h1>
+                        </div>
+                        <div class="span">
+                            برای تسریع در روند مشاوره لطفاً فرم زیر را تکمیل نمایید.
+                        </div>
+                        <form action="" method="post" class="mb-5">
+                            <!-- start type of request -->
+                            <div class="request type-of-request" data-target="type_request">
+                                <p class="form_title">نوع درخواست</p>
+                                <div class="inputs">
+                                    <input type="radio" hidden id="web" name="request_type" checked value="1">
+                                    <label for="web" class="label active">وبسایت</label>
+                                    <input type="radio" hidden id="seo" name="request_type" value="2">
+                                    <label for="seo" class="label">سئو و بهینه‌سازی</label>
+                                    <input type="radio" hidden id="portal" name="request_type" value="3">
+                                    <label for="portal" class="label">پورتال</label>
+                                </div>
+                                <div class="sent_button">
+                                    <button type="button" class="btn sent_btn"
+                                        data-level="familiarity_webdesign">ثبت</button>
+                                </div>
+                            </div>
+                            <!--do you have getting to know web design? -->
+                            <div class="request -web-design" style="display: none;" data-target="familiarity_webdesign">
+                                <p class="form_title">با انواع طراحی سایت آشنایی دارید؟</p>
+                                <div class="inputs">
+                                    <input type="radio" hidden id="familiarity_yes" name="familiarity" value="1">
+                                    <label for="familiarity_yes" class="label active">بله</label>
+                                    <input type="radio" hidden id="familiarity_no" name="familiarity" value="0">
+                                    <label for="familiarity_no" class="label">خیر</label>
+                                </div>
+                                <div class="sent_button">
+                                    <button type="button" class="btn sent_btn" data-level="type_website">ثبت</button>
+                                    <button type="button" class="btn before_btn" data-back-level="">مرحله قبل</button>
+                                </div>
+                            </div>
+                            <!-- start type of web design -->
+                            <div class="request type-of-web-design" style="display: none;" data-target="type_website">
+                                <p class="form_title">نوع طراحی وبسایت درخواستی</p>
+                                <div class="inputs">
+                                    <input type="radio" hidden id="exclusive" name="type_website" value="1">
+                                    <label for="exclusive" class="label active">
+                                        قالب اختصاصی
+                                    </label>
+                                    <input type="radio" hidden id="ready" name="type_website" value="2">
+                                    <label for="ready" class="label">
+                                        قالب وردپرسی
+                                </div>
+                                <div class="select__2">
+                                    <p class="form_title">نوع عملکرد وبسایت درخواستی</p>
+                                    <select name="web_design" id="web_design" class="input_select2">
+                                        <option value="0">فروشگاهی</option>
+                                        <option value="1">شرکت</option>
+                                    </select>
+                                </div>
+                                <div class="sent_button">
+                                    <button type="button" class="btn sent_btn" data-level="privacy_info">ثبت</button>
+                                    <button type="button" class="btn before_btn" data-back-level="">مرحله قبل</button>
+                                </div>
+                            </div>
+                            <!-- start request form for contact -->
+                            <div class="request request_form" style="display: none;" data-target="privacy_info">
+                                <div class="row">
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="form-items">
+                                            <label for="fullName" class="label required">نام و نام خانوادگی</label>
+                                            <input type="text" name="fullName" id="fullName" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="form-items">
+                                            <label for="tell" class="label required">شماره همراه</label>
+                                            <input type="tel" name="tell" id="tell" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="form-items">
+                                            <label for="phone" class="label">تلفن ثابت</label>
+                                            <input type="tel" name="phone" id="phone">
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="form-items">
+                                            <label for="email" class="label">ایمیل</label>
+                                            <input type="email" name="email" id="email">
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="form-items">
+                                            <label for="activity" class="label">زمینه فعالیت</label>
+                                            <input type="text" name="activity" id="activity">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 col-xl-6">
+                                        <p class="form_title required">از چه طریق با برکه آشنا شده اید؟</p>
+                                        <div class="inputs">
+                                            <input type="radio" hidden id="google" name="google">
+                                            <label for="google" class="label active">جستجوگر گوگل</label>
+                                            <input type="radio" hidden id="instagram" name="instagram">
+                                            <label for="instagram" class="label">اینستاگرام</label>
+                                            <input type="radio" hidden id="adv" name="adv">
+                                            <label for="adv" class="label">تبلیغات مجازی</label>
+                                            <input type="radio" hidden id="friends" name="friends">
+                                            <label for="friends" class="label">معرفی دوستان</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-xl-6">
+                                        <p class="form_title">در کدام ساعت از روز با شما تماس بگیریم؟</p>
+                                        <div class="inputs">
+                                            <input type="radio" hidden id="clock1" name="clock1">
+                                            <label for="clock1" class="label active">10 - 12</label>
+                                            <input type="radio" hidden id="clock2" name="clock2">
+                                            <label for="clock2" class="label">12 - 14</label>
+                                            <input type="radio" hidden id="clock3" name="clock3">
+                                            <label for="clock3" class="label">14 - 16</label>
+                                            <input type="radio" hidden id="clock4" name="clock4">
+                                            <label for="clock4" class="label">16 - 18</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="sent_button">
+                                    <button type="submit" class="btn sent_btn">ثبت</button>
+                                    <button type="button" class="btn before_btn">مرحله قبل</button>
+                                </div>
+                            </div>
+                            <!-- have website? -->
+                            <div class="request -website" style="display: none;" data-target="have_website">
+                                <p class="form_title">آیا شما وبسایت دارید؟</p>
+                                <div class="inputs">
+                                    <input type="radio" hidden id="have_answer_yes" name="have_answer" value="1">
+                                    <label for="have_answer_yes" class="label active">بله</label>
+                                    <input type="radio" hidden id="have_answer_no" name="have_answer" value="0">
+                                    <label for="have_answer_no" class="label">خیر</label>
+                                </div>
+                                <div class="sent_button">
+                                    <button type="button" class="btn sent_btn"
+                                        data-level="privary_and_seo_info">ثبت</button>
+                                    <button type="button" class="btn before_btn" data-back-level="type_request">مرحله
+                                        قبل</button>
+                                </div>
+                            </div>
+                            <!-- seo form -->
+                            <div class="request seo_form" style="display: none;" data-target="privary_and_seo_info">
+                                <div class="row">
+                                    <div class="col-12 col-md-6">
+                                        <div class="form-items">
+                                            <label for="web-address" class="label required">آدرس وبسایت</label>
+                                            <input type="text" name="web-address" id="web-address" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <div class="form-items">
+                                            <label for="time" class="label required">چه مدت از زمان راه اندازی
+                                                وبسایت شما میگذرد؟</label>
+                                            <select name="time" id="time" class="input_select2 w-100">
+                                                <option value="0">کمتر از یک سال</option>
+                                                <option value="1">بیش از یک سال</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <div class="form-items">
+                                            <label for="web-designer" class="label required">آیا به طراح وبسایت خود
+                                                دسترسی دارید؟</label>
+                                            <select name="web-designer" id="web-designer" class="select">
+                                                <option value="بله">بله</option>
+                                                <option value="خیر">خیر</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <div class="form-items">
+                                            <label for="analytic" class="label required">آیا به آنالیتیکس وبسایت خود
+                                                دسترسی دارید؟</label>
+                                            <select name="analytic" id="analytic" class="select">
+                                                <option value="خیر">بله</option>
+                                                <option value="خیر">خیر</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <div class="form-items">
+                                            <label for="search_clg" class="label required">به سرچ کنسول وبسایت خود
+                                                دسترسی دارید؟</label>
+                                            <select name="search_clg" id="search_clg" class="select">
+                                                <option value="خیر">بله</option>
+                                                <option value="خیر">خیر</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <div class="form-items">
+                                            <label for="penalty" class="label required">آیا تا به حال وبسایت شما
+                                                توسط گوگل جریمه شده است؟</label>
+                                            <select name="penalty" id="penalty" class="select">
+                                                <option value="خیر">بله</option>
+                                                <option value="خیر">خیر</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <div class="form-items">
+                                            <label for="designer" class="label required">آیا تا به حال وبسایت شما
+                                                مورد حمله هکرها قرار گرفته است؟</label>
+                                            <select name="designer" id="designer" class="select">
+                                                <option value="خیر">بله</option>
+                                                <option value="خیر">خیر</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <div class="form-items">
+                                            <label for="budget" class="label required">میزان بودجه سالیانه ای که
+                                                برای سئو در نظر گرفته اید؟</label>
+                                            <input type="text" name="budget" id="budget"
+                                                placeholder="مبلغ را به تومان وارد نمایید">
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-items">
+                                            <label for="keywords" class="label required">کلمات کلیدی کسب و
+                                                کارتان</label>
+                                            <input type="text" name="keywords" id="keywords">
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-items">
+                                            <label for="descript" class="label required">شرح درخواست</label>
+                                            <textarea name="descript" id="descript" cols="30" rows="5"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="form-items">
+                                            <label for="fullName" class="label required">نام و نام خانوادگی</label>
+                                            <input type="text" name="fullName" id="fullName" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="form-items">
+                                            <label for="tell" class="label required">شماره همراه</label>
+                                            <input type="tel" name="tell" id="tell" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="form-items">
+                                            <label for="phone" class="label">تلفن ثابت</label>
+                                            <input type="tel" name="phone" id="phone">
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="form-items">
+                                            <label for="email" class="label">ایمیل</label>
+                                            <input type="email" name="email" id="email">
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <div class="form-items">
+                                            <label for="activity" class="label">زمینه فعالیت</label>
+                                            <input type="text" name="activity" id="activity">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 col-xl-6">
+                                        <p class="form_title required">از چه طریق با برکه آشنا شده اید؟</p>
+                                        <div class="inputs">
+                                            <input type="radio" hidden id="google" name="google">
+                                            <label for="google" class="label active">جستجوگر گوگل</label>
+                                            <input type="radio" hidden id="instagram" name="instagram">
+                                            <label for="instagram" class="label">اینستاگرام</label>
+                                            <input type="radio" hidden id="adv" name="adv">
+                                            <label for="adv" class="label">تبلیغات مجازی</label>
+                                            <input type="radio" hidden id="friends" name="friends">
+                                            <label for="friends" class="label">معرفی دوستان</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-xl-6">
+                                        <p class="form_title">در کدام ساعت از روز با شما تماس بگیریم؟</p>
+                                        <div class="inputs">
+                                            <input type="radio" hidden id="clock1" name="clock1">
+                                            <label for="clock1" class="label active">10 - 12</label>
+                                            <input type="radio" hidden id="clock2" name="clock2">
+                                            <label for="clock2" class="label">12 - 14</label>
+                                            <input type="radio" hidden id="clock3" name="clock3">
+                                            <label for="clock3" class="label">14 - 16</label>
+                                            <input type="radio" hidden id="clock4" name="clock4">
+                                            <label for="clock4" class="label">16 - 18</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="sent_button">
+                                    <button type="submit" class="btn sent_btn">ثبت نهایی</button>
+                                    <button type="button" class="btn before_btn" data-back-level="have_website">مرحله
+                                        قبل</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- start brif section -->
+        <section class="brif">
+            <div class="container-fluid p-0 mx-0">
+                <div class="row p-0 mx-0">
+                    <div class="col-12 p-0 mx-0">
+                        <div class="brif_content">
+                            <div class="brif_item">
+                                <p>
+                                    برای درخواست مشاوره و پیشنهاد همکاری با شرکت برکه
+                                    میتوانید از طریق فرم مشاوره با ما در تماس باشید.
+                                </p>
+                                <a href="#" class="btn btn_brif">فرم مشاوره</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- start footer -->
+        <footer>
+            <div class="footer_berkeh">
+                <div class="container">
+                    <div class="row pb">
+                        <div class="col-12 col-lg-4">
+                            <div class="footer_item footer_contact-us">
+                                <div class="cu_title">
+                                    <h4>
+                                        راه‌های ارتباط با ما
+                                    </h4>
+                                </div>
+                                <div class="cu_items">
+                                    <ul class="cu_ul">
+                                        <li class="cu_li">
+                                            <span class="li_icons">
+                                                <i class="fas fa-phone"></i>
+                                            </span>
+                                            <span class="li_content">
+                                                021-22323745 021-22323746
+                                            </span>
+                                        </li>
+                                        <li class="cu_li">
+                                            <span class="li_icons">
+                                                <i class="fas fa-at"></i>
+                                            </span>
+                                            <span class="li_content">
+                                                info@berkehtech.com
+                                            </span>
+                                        </li>
+                                        <li class="cu_li">
+                                            <span class="li_icons">
+                                                <i class="fas fa-thumbtack"></i>
+                                            </span>
+                                            <span class="li_content">
+                                                تهران - خیابان بنی‌هاشم - رو به روی پاساژ الماس
+                                                بنی‌هاشم - کوچه سپید - مجتمع سپیده - طبقه 3
+                                                واحد 47
+                                            </span>
+                                        </li>
+                                        <li class="cu_li">
+                                            <span href="#" class="li_icons">
+                                                <i class="fas fa-share-alt"></i>
+                                            </span>
+                                            <a href="#" class="w-color social_icons">
+                                                <i class="fab fa-instagram"></i>
+                                            </a>
+                                            <a href="#" class="w-color social_icons">
+                                                <i class="fab fa-linkedin-in"></i>
+                                            </a>
+                                            <a href="#" class="w-color social_icons">
+                                                <i class="fab fa-twitter"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <div class="footer_item footer_links">
+                                <div class="cu_title">
+                                    <h4>
+                                        لینک های مرتبط
+                                    </h4>
+                                </div>
+                                <div class="cu_items">
+                                    <ul class="cu_ul footer_menu">
+                                        <li class="cu_li pb-li">
+                                            <a href="#" class="li_content bolt">
+                                                تماس با ما
+                                                <span class="line_bottom"></span>
+                                            </a>
+                                        </li>
+                                        <li class="cu_li pb-li">
+                                            <a href="#" class="li_content bolt">
+                                                درباره ما
+                                                <span class="line_bottom"></span>
+                                            </a>
+                                        </li>
+                                        <li class="cu_li pb-li">
+                                            <a href="#" class="li_content bolt">
+                                                مقالات
+                                                <span class="line_bottom"></span>
+                                            </a>
+                                        </li>
+                                        <li class="cu_li pb-li">
+                                            <a href="#" class="li_content bolt">
+                                                مشاوره
+                                                <span class="line_bottom"></span>
+                                            </a>
+                                        </li>
+                                        <li class="cu_li pb-li">
+                                            <a href="#" class="li_content bolt">
+                                                خدمات
+                                                <span class="line_bottom"></span>
+                                            </a>
+                                        </li>
+                                        <li class="cu_li pb-li">
+                                            <a href="#" class="li_content bolt">
+                                                نمونه کارها
+                                                <span class="line_bottom"></span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <div class="footer_item footer_about">
+                                <div class="cu_title">
+                                    <h4>
+                                        درباره برکه
+                                    </h4>
+                                </div>
+                                <div class="cu_items">
+                                    <p>
+                                        دانش نرم افزاری همچون آب حیات تکنولوژی آینده بشر
+                                        است، از این رو ما برای دریا شدن تلاش می کنم تا بتوانیم
+                                        جزو بهترین ها در راستای توسعه کسب و کار هوشمند،
+                                        طراحی سایت، بازاریابی دیجیتالی، سئو و طراحی نرم افزار
+                                        در جهت پیشبرد اهداف و رضایت مشتریان گام برمیداریم
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 text-center pt-3">
+                            <p class="color-footer">
+                                ساخته شده توسط شرکت برکه
+                            </p>
+                            <p class="text-light">
+                                تمامی حقوق مادی و معنوی این سایت متعلق به شرکت برکه میباشد
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- end footer -->
+    </div>
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="node_modules/select2/dist/js/select2.full.min.js"></script>
+    <script src="node_modules/jquery-migrate/dist/jquery-migrate.min.js"></script>
+    <script src="node_modules/slick-carousel/slick/slick.min.js"></script>
+    <script src="public/js/lottie-player.js"></script>
+    <script src="public/js/owl.carousel.min.js"></script>
+    <script src="public/js/slider.js"></script>
+    <script src="public/js/script.js"></script>
+</body>
+
+</html>

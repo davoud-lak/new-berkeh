@@ -1,0 +1,246 @@
+* {
+  box-sizing: border-box;
+  outline: none;
+  margin: 0;
+  padding: 0;
+}
+
+$base-size: 16;
+
+@function rem($target, $context: $base-size) {
+  @return ($target / $context) * 1rem;
+}
+
+@font-face {
+  font-family: "iranSans-regular";
+  src: url("../fonts/IRANSansWeb\(FaNum\).eot") format("eot"),
+    url("../fonts/IRANSansWeb\(FaNum\).ttf") format("truetype"),
+    url("../fonts/IRANSansWeb\(FaNum\).woff") format("woff"),
+    url("../fonts/IRANSansWeb\(FaNum\).woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "iranSansWeb_light";
+  src: url("../fonts/IRANSansWeb_Light.eot") format("eot"),
+    url("../fonts/IRANSansWeb_Light.ttf") format("truetype"),
+    url("../fonts/IRANSansWeb_Light.woff") format("woff"),
+    url("../fonts/IRANSansWeb_Light.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "IRANSans-Bold-web";
+  src: url("../fonts/IRANSans-Bold-web.eot") format("eot"),
+    url("../fonts/IRANSans-Bold-web.ttf") format("truetype"),
+    url("../fonts/IRANSans-Bold-web.woff") format("woff"),
+    url("../fonts/IRANSans-Bold-web.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Vazir-Bold";
+  src: url("../fonts/Vazir/Vazir-Bold.eot") format("eot"),
+    url("../fonts/Vazir/Vazir-Bold.ttf") format("truetype"),
+    url("../fonts/Vazir/Vazir-Bold.woff") format("woff"),
+    url("../fonts/Vazir/Vazir-Bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Vazir-Regular";
+  src: url("../fonts/Vazir/Vazir-Regular.eot") format("eot"),
+    url("../fonts/Vazir/Vazir-Regular.ttf") format("truetype"),
+    url("../fonts/Vazir/Vazir-Regular.woff") format("woff"),
+    url("../fonts/Vazir/Vazir-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "roboto-regular";
+  src: url("../fonts/Roboto/RobotoCondensed-Regular.eot") format("eot"),
+    url("../fonts/Roboto/RobotoCondensed-Regular.ttf") format("truetype"),
+    url("../fonts/Roboto/RobotoCondensed-Regular.woff") format("woff"),
+    url("../fonts/Roboto/RobotoCondensed-Regular.woff2") format("woff2");
+}
+
+html,
+body {
+  font-size: 14px;
+  font-family: "iranSans-regular", "roboto-regular";
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  direction: rtl;
+  text-align: right;
+  outline: none;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #fff;
+  line-height: 1.5rem !important;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0;
+  font-family: "Vazir-Bold";
+  color: var(--color-darkgreen);
+}
+
+h1,
+h2,
+h3 {
+  font-size: 1.3rem;
+  line-height: 3rem;
+}
+
+h4,
+h5,
+h6 {
+  font-size: 1.2rem;
+  line-height: 2.5rem;
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+  h1,
+  h2,
+  h3 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+  h1,
+  h2,
+  h3 {
+    font-size: 1.25rem;
+  }
+
+  h4,
+  h5,
+  h6 {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+  h1,
+  h2,
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  h4,
+  h5,
+  h6 {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 575.98px) {
+
+  h1,
+  h2,
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  h4,
+  h5,
+  h6 {
+    font-size: 1rem;
+  }
+}
+
+ul,
+ol,
+p {
+  list-style-type: none;
+  padding: unset;
+  margin: unset;
+}
+
+a {
+  text-decoration: none !important;
+  color: unset;
+  cursor: pointer;
+
+  &:hover {
+    color: unset;
+  }
+}
+
+
+
+// @media screen and (max-width:575.98px) {
+//     // Mobile
+//   }
+
+//   @media (min-width:576px) and (max-width:767.98px) {
+//     //  Mobile Landscape
+//   }
+
+//   @media (min-width:768px) and (max-width:991.98px) {
+//     // Tablet
+//   }
+
+//   @media (min-width:992px) and (max-width:1199.98px) {
+//     // Ipad And Surface
+//   }
+
+//   @media (min-width:1200px) {
+//     // Laptop
+//   }
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #0b3a42;
+}
+
+.selectize-control.multi .selectize-input [data-value] {
+  background-color: var(--color-primary) !important;
+  background-image: unset;
+  padding: 1px 8px;
+  background: #edeff1;
+  color: #343a40;
+}
+
+.selectize-control.multi .selectize-input>div {
+  border: unset;
+}
+
+.selectize-control.plugin-remove_button [data-value] .remove {
+  border-left: unset !important;
+}
+
+.nav_breadcrumb .breadcrumb-item,.invalid-feedback{
+  font-family: "Vazir-Regular";
+}
+/* Handle on hover */
+// ::-webkit-scrollbar-thumb:hover {
+//   background: var(--bg-links-of-more-than-link-in-action-page);
+// }

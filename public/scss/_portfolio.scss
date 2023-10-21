@@ -1,0 +1,364 @@
+.portfolio_page {
+  width: 100%;
+  height: auto;
+  position: relative;
+  padding-top: rem(60);
+  padding-bottom: rem(80);
+
+  .page_title {
+    margin-bottom: rem(40);
+    color: var(--color-darkgreen);
+  }
+
+  .portfolio_btn {
+    font-family: "Vazir-Regular";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: rem(50);
+
+    .prf_btns {
+      width: auto;
+      padding: rem(10) rem(20);
+      cursor: pointer;
+
+      span {
+        font-size: rem(20);
+      }
+    }
+
+    .active {
+      border-bottom: 2px solid var(--color-primary);
+    }
+  }
+}
+
+.portfolio {
+  position: relative;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin-bottom: rem(30);
+
+  .portfolio_items {
+    width: 100%;
+    border-radius: rem(5);
+    margin-bottom: rem(30);
+    transition: all 0.5s;
+
+    img {
+      max-width: 100%;
+      height: rem(250);
+      border-radius: rem(5);
+    }
+  }
+
+  .layer {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #0b3a42b5;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: rem(5);
+    z-index: 3;
+    transition: all 0.5s;
+
+    p {
+      color: #fff;
+      margin-bottom: rem(10);
+      font-size: rem(18);
+    }
+
+    a {
+      color: var(--color-primary);
+    }
+  }
+
+  &:hover {
+    .layer {
+      display: flex;
+    }
+  }
+}
+
+// portfolio detail style
+.portfolio_detail {
+  padding-bottom: rem(80);
+}
+
+.portfolio_description {
+  margin-top: rem(60);
+  margin-bottom: rem(60);
+
+  .descript {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+
+    @media screen and (max-width: 767.98px) {
+      margin-top: rem(40);
+    }
+
+    .site_name {
+      margin-bottom: rem(30);
+
+      p {
+        font-size: rem(18);
+        font-weight: 600;
+        color: var(--color-darkgreen);
+      }
+    }
+
+    .site_descript {
+      p {
+        text-align: justify;
+      }
+    }
+
+    .view_site {
+      margin-top: rem(30);
+    }
+  }
+
+  .site_img {
+    position: relative;
+    width: 100%;
+
+    @media (min-width: 768px) and (max-width: 991.98px) {
+      margin-top: rem(80);
+    }
+
+    .image {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      position: relative;
+      top: rem(3);
+      right: rem(2.5);
+
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+.coding_languages {
+  position: relative;
+  margin-bottom: rem(60);
+
+  .title {
+    font-size: rem(18);
+    color: var(--color-darkgreen);
+    margin-bottom: rem(40);
+    font-family: "Vazir-Bold";
+  }
+
+  .coding_items {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0 rem(50);
+
+    @media screen and (max-width: 575.98px) {
+      padding: 0;
+    }
+
+    .a_code {
+      &:hover {
+        color: unset;
+      }
+    }
+
+    .items {
+      width: rem(160);
+      height: rem(190);
+      background: #f8f9fa;
+      border-radius: rem(5);
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      margin: rem(15);
+      padding: rem(15) 0 0;
+      text-align: center;
+      font-family: "roboto-regular";
+      position: relative;
+      .circle {
+        width: rem(80);
+        height: rem(80);
+        background: #e9ecef;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: rem(20);
+
+        img {
+          max-width: 75%;
+        }
+      }
+
+      .php {
+        img {
+          max-width: 60%;
+        }
+      }
+
+      .codeigniter {
+        img {
+          max-width: 50%;
+        }
+      }
+      .more_button {
+        position: absolute;
+        bottom: 0;
+        .more {
+          width: rem(160);
+          border: unset;
+          background: #e9ecef;
+          color: #222;
+          border-radius: rem(5);
+        }
+      }
+    }
+  }
+}
+
+.more_portfolios {
+  position: relative;
+  margin-bottom: rem(60);
+
+  .title {
+    font-size: rem(18);
+    color: var(--color-darkgreen);
+    margin-bottom: rem(40);
+    font-family: "Vazir-Bold";
+  }
+}
+.more_portfolio_items {
+  display: flex;
+  justify-content: center;
+
+  .main-box {
+    background-color: #f6f7f8;
+    border-radius: 10px;
+    direction: rtl;
+    .image_holder {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+      }
+    }
+
+    .website_name {
+      display: block;
+      width: 100%;
+      color: #0b3a42;
+      font-family: "Vazir-Bold";
+      font-size: 16px;
+      margin: 30px 0;
+      padding-right: 20px;
+    }
+
+    .actions {
+      padding: 0 20px;
+      margin-bottom: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .category {
+        font-family: "Vazir-Regular";
+        font-size: 15px;
+      }
+
+      .redirect_to_detail {
+        font-family: "Vazir-Regular";
+        border: 2px solid var(--color-primary);
+        color: var(--color-primary);
+        padding: 5px 10px;
+        border-radius: 30px;
+        transition: all 0.5s;
+        &:hover {
+          background: var(--color-primary);
+          color: #fff;
+        }
+      }
+    }
+  }
+  .slick-prev,
+  .slick-next {
+    top: rem(-40);
+    width: rem(25);
+    height: rem(25);
+    &::before {
+      color: var(--color-darkgreen);
+      font-size: 25px;
+    }
+  }
+  .slick-next {
+    left: 2%;
+  }
+  .slick-prev {
+    left: 5%;
+    @media (min-width: 768px) and (max-width: 991.98px) {
+      left: 7%;
+    }
+    @media (min-width: 576px) and (max-width: 767.98px) {
+      left: 9%;
+    }
+  }
+}
+
+._center {
+  display: flex !important;
+  justify-content: center;
+}
+
+.possibilities_title {
+  font-size: 20px;
+  margin-bottom: 50px;
+  font-weight: bold;
+  color: var(--color-darkgreen);
+}
+
+.possibilities_list {
+  margin-bottom: 50px;
+  padding: unset;
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.possibilities_list li {
+  width: 50%;
+  font-size: 14px;
+  margin-bottom: 20px;
+  @media screen and (max-width: 767.98px) {
+    width: 100%;
+  }
+}
+
+.possibilities_list li::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  border: 2px solid var(--color-primary);
+  display: inline-block;
+  margin-left: 5px;
+}

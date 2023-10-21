@@ -1,0 +1,214 @@
+.shop_page {
+  h1 {
+    margin-bottom: rem(30);
+  }
+  .description {
+    margin-bottom: rem(80);
+    text-align: justify;
+    line-height: rem(30);
+  }
+  .image {
+    margin-bottom: rem(80);
+    height: auto;
+    img {
+      width: 100%;
+    }
+  }
+  .title {
+    margin-bottom: rem(40);
+    h3 {
+      color: #000;
+    }
+  }
+  .proprty {
+    margin-bottom: rem(80);
+    @media screen and (max-width: 575.98px) {
+      margin-bottom: unset;
+    }
+    .image {
+      margin-bottom: rem(30);
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: rem(10);
+      }
+    }
+  }
+  .best_features {
+    .customers_logo {
+      width: 100%;
+      height: auto;
+      position: relative;
+      z-index: 11;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      transition: all 0.5s;
+
+      @media screen and (max-width: 991.98px) {
+        height: auto;
+        justify-content: center;
+      }
+
+      .logos {
+        width: rem(100);
+        height: rem(100);
+        display: flex;
+        justify-content: center;
+        margin: 2%;
+        align-items: center;
+        background: #fff;
+        padding: rem(10);
+        border-radius: rem(10);
+        transition: all 0.5s;
+        color: var(--color-primary);
+        border: 2px solid #e9ecef;
+        cursor: pointer;
+        @media screen and (max-width: 575.98px) {
+          width: 5rem;
+          height: 5rem;
+        }
+        .items {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+          height: 100%;
+        }
+
+        i {
+          font-size: 40px;
+        }
+        &:hover {
+          border-color: var(--color-darkgreen) !important;
+          color: var(--color-darkgreen) !important;
+        }
+      }
+      .active_logo{
+        border-color: var(--color-darkgreen) !important;
+          color: var(--color-darkgreen) !important;
+      }
+    }
+    .title_property{
+      @media screen and (max-width: 575.98px) {
+        margin-top: 50px;
+      }
+    }
+    .description {
+      margin-top: 20px;
+      line-height: rem(30);
+    }
+  }
+  .importance_online_store {
+    margin-bottom: rem(80);
+    .description {
+      margin-bottom: rem(60);
+    }
+  }
+  .basic_features_items {
+    .customers_logo {
+      .logos {
+        width: 100%;
+        height: auto;
+        padding: rem(20);
+        border: 2px dashed var(--color-primary);
+        color: var(--color-primary);
+        margin: rem(20) auto;
+        .items {
+          text-align: center;
+          justify-content: space-between;
+
+          i {
+            font-size: 35px;
+            filter: unset;
+          }
+          span {
+            font-size: 14px;
+            filter: unset;
+          }
+        }
+        &:hover {
+          color: var(--color-darkgreen) !important;
+        }
+      }
+    }
+  }
+}
+.frequently_asked_question {
+  padding: rem(100) 0 rem(140);
+  h3 {
+    text-align: right;
+    color: #000;
+    font-size: 20px;
+    margin-bottom: rem(12);
+  }
+
+  .frequently_asked_question_items {
+    padding-top: 3rem;
+    ul {
+      li {
+        margin-top: rem(16);
+        border-bottom: 1px solid #ced4da;
+        margin-bottom: rem(16);
+        .caption {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-bottom: rem(16);
+          cursor: pointer;
+          color: #000;
+          font-weight: 400;
+          i {
+            color: var(--text-secondry);
+          }
+        }
+        .active {
+          color: var(--color-primary);
+          i {
+            color: var(--color-primary);
+          }
+        }
+        .description {
+          color: var(--text-secondry);
+          padding-bottom: rem(20);
+          margin-bottom: rem(20);
+        }
+      }
+    }
+  }
+}
+#personalModal{
+  top: 150px;
+  .modal-header{
+    border-bottom: unset;
+    .btn-close{
+      border: unset;
+      background-color: transparent;
+      padding: rem(10);
+      i{
+        font-size: 18px;
+      }
+    }
+  }
+}
+.personal_form{
+  .form_item{
+    margin-bottom: rem(20);
+    input{
+      &::placeholder{
+        color: #ccc;
+        font-size: 12px;
+        text-align: right;
+      }
+    }
+    .title{
+      display: block;
+      margin-bottom: rem(12);
+    }
+    label{
+      margin-left: rem(15);
+      vertical-align: text-top;
+    }
+  }
+}
