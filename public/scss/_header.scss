@@ -49,16 +49,19 @@ header {
   position: absolute;
   opacity: 0.5;
   top: 3rem;
+
   @media (min-width: 768px) and (max-width: 991.98px) {
     background-size: 4.5% 100%;
   }
+
   @media (min-width: 576px) and (max-width: 767.98px) {
     background-size: 5.5% 100%;
   }
+
   @media screen and (max-width: 575.98px) {
     background-size: 8% 100%;
     height: 79%;
-  }  
+  }
 }
 
 .action_bar {
@@ -70,9 +73,11 @@ header {
   right: 0;
   z-index: 2222;
   background: #fff;
-  @media screen and (max-width: 575.98px){
+
+  @media screen and (max-width: 575.98px) {
     padding: rem(20) 0;
   }
+
   .logo {
     display: flex;
     align-items: center;
@@ -87,7 +92,8 @@ header {
 .header_title {
   width: 100%;
   padding: 0 rem(30);
-  h2{
+
+  h2 {
     font-size: rem(40);
     line-height: rem(60);
   }
@@ -96,6 +102,35 @@ header {
     text-align: center;
     position: relative;
     bottom: rem(-200);
+  }
+}
+
+.logo_login_items {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  .login_item {
+    margin-left: 3rem;
+    display: flex;
+    align-items: center;
+    @media screen and (max-width: 767.98px) {
+      margin-left: 1rem;
+    }
+
+    .login_btn {
+      padding: 0.25rem;
+      display: flex;
+      align-items: center;
+      position: relative;
+
+      &::before {
+        content: url(../images/icons/user.svg);
+        position: relative;
+        top: 0.25rem;
+        margin-left: 0.5rem;
+      }
+    }
   }
 }
 
@@ -123,33 +158,38 @@ header {
     }
   }
 }
+
 // start breadcrumb style
 .nav_breadcrumb {
   margin-top: rem(100);
-  
+
   .breadcrumb {
     background: transparent;
     border-radius: unset;
     padding: rem(10) 0;
     display: flex;
   }
+
   .breadcrumb-item {
     display: flex;
     align-items: center;
     color: var(--text-secondry);
-    
-    &:hover{
-      a{
+
+    &:hover {
+      a {
         color: var(--text-secondry);
       }
     }
   }
+
   .active {
     color: var(--color-darkgreen);
     font-family: "Vazir-Bold";
   }
-  .breadcrumb-item+ .breadcrumb-item {
+
+  .breadcrumb-item+.breadcrumb-item {
     padding-left: 0;
+
     &::before {
       float: none;
       padding: 0 rem(5);

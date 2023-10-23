@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>dashboard notifications</title>
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap-reboot.min.css "
+    />
+    <link rel="stylesheet" href="public/css/all.min.css" />
+    <link rel="stylesheet" href="public/css/main.min.css" />
+  </head>
+
+  <body>
+    <!-- start menu -->
+    <div class="menu">
+      <menu>
+        <ul class="ul_menu">
+          <li class="li_menu">
+            <a href="#" class="item_menu"> صفحه اصلی </a>
+          </li>
+          <li class="li_menu">
+            <a href="#" class="item_menu"> پورتال </a>
+          </li>
+          <li class="li_menu">
+            <a href="#" class="item_menu"> خدمات </a>
+          </li>
+          <li class="li_menu">
+            <a href="#" class="item_menu"> درخواست مشاوره </a>
+          </li>
+          <li class="li_menu">
+            <a href="#" class="item_menu"> مقالات </a>
+          </li>
+          <li class="li_menu">
+            <a href="#" class="item_menu"> درباره ما </a>
+          </li>
+          <li class="li_menu">
+            <a href="#" class="item_menu"> تماس با ما </a>
+          </li>
+        </ul>
+      </menu>
+      <div class="btn close">
+        <i class="fal fa-times"></i>
+      </div>
+    </div>
+    <!-- end menu -->
+    <div class="app">
+      <!-- start header -->
+      <div class="action_bar">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-4 col-md-1 align-items-center">
+                  <div class="menu_btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                </div>
+    
+                <div class="col-8 col-md-11">
+                  <div class="logo_login_items">
+                    <div class="login_item">
+                      <a class="login_btn" href="#">مرتضی حلاجی</a>
+                    </div>
+                    <div class="logo">
+                      <a href="#">
+                        <img
+                          src="public/images/berkehTech.jpg"
+                          alt="berkehTech.jpg"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+      </div>
+      <!-- Start section -->
+      <section class="dashboard_page">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12 col-lg-3 position-relative">
+              <div class="dashboard_menu">
+                <div class="header_menu">
+                  <div class="avatar">
+                    <img
+                      src="public/images/icons/Iconly-Bold-Profile.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="user_name">
+                    <span class="name"> مرتضی حلاجی </span>
+                    <span class="wellcome_text"> به پنل کاربری خوش آمدید </span>
+                  </div>
+                </div>
+                <div class="body">
+                  <ul class="dashboard_list">
+                    <li class="li_list">
+                      <a href="#" class="a_list">
+                        <div class="icon">
+                          <img
+                            src="public/images/icons/Category.svg"
+                            alt=""
+                          />
+                        </div>
+                        <span>داشبورد</span>
+                      </a>
+                    </li>
+                    <li class="li_list">
+                      <a href="#" class="a_list">
+                        <div class="icon">
+                          <img
+                            src="public/images/icons/Profile-black.svg"
+                            alt=""
+                          />
+                        </div>
+                        <span>اطلاعات حساب کاربری</span>
+                      </a>
+                    </li>
+                    <li class="li_list">
+                      <a href="#" class="a_list active">
+                        <div class="icon">
+                          <img
+                            src="public/images/icons/Notification.svg"
+                            alt=""
+                          />
+                        </div>
+                        <span>پیام‌های سیستم</span>
+                        <span class="new_msg">پیام جدید</span>
+                      </a>
+                    </li>
+                    <li class="li_list">
+                      <a href="#" class="a_list">
+                        <div class="icon">
+                          <img
+                            src="public/images/icons/Setting.svg"
+                            alt=""
+                          />
+                        </div>
+                        <span>تنظیمات</span>
+                      </a>
+                    </li>
+                    <li class="li_list">
+                      <a href="#" class="a_list">
+                        <div class="icon">
+                          <img src="public/images/icons/Logout.svg" alt="" />
+                        </div>
+                        <span>خروج از حساب کاربری</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-9">
+                <div class="dashboard_content">
+                    <div class="header">
+                        <p>کاربر گرامی شما میتوانید لیست پیام های دریافتی سیستم را در این صفحه مشاهده کنید</p>
+                    </div>
+                    <div class="body">
+                        <div class="message_section">
+                            <div class="title_section">
+                                <span>پیام های سیستم</span>
+                            </div>
+                            <div class="content_section">
+                                <div class="msg_box">
+                                    <div class="msg_items">
+                                        <div class="msg">
+                                            <span class="circle" style="background: #06d6a0;"></span>
+                                            <span class="text">
+                                                خدمات ابزار سئوی شما تا 
+                                                <span class="date">1402/11/25</span>
+                                                فعال شد.
+                                            </span>
+                                        </div>
+                                        <button type="button" class="delete">
+                                            <img src="public/images/icons/Iconly-Bold-Delete-red.svg"
+                                                alt="">
+                                        </button>
+                                    </div>
+                                    <div class="msg_date">
+                                        <span class="date">1402/07/29</span>
+                                        <span class="clock">17:01</span>
+                                        <img src="public/images/icons/Time-Circle.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="msg_box">
+                                    <div class="msg_items">
+                                        <div class="msg">
+                                            <span class="circle" style="background: #f77f00;"></span>
+                                            <span class="text">
+                                                خدمات ابزار سئوی شما تا 
+                                                <span class="date">1402/9/25</span>
+                                                غیرفعال می‌شود.
+                                            </span>
+                                        </div>
+                                        <button type="button" class="delete">
+                                            <img src="public/images/icons/Iconly-Bold-Delete-red.svg"
+                                                alt="">
+                                        </button>
+                                    </div>
+                                    <div class="msg_date">
+                                        <span class="date">1402/07/25</span>
+                                        <span class="clock">17:01</span>
+                                        <img src="public/images/icons/Time-Circle.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="msg_box">
+                                    <div class="msg_items">
+                                        <div class="msg">
+                                            <span class="circle" style="background: #ef233e;"></span>
+                                            <span class="text">
+                                                خدمات ابزار سئوی شما تا 
+                                                <span class="date">1402/07/25</span>
+                                                غیرفعال شد.
+                                            </span>
+                                        </div>
+                                        <button type="button" class="delete">
+                                            <img src="public/images/icons/Iconly-Bold-Delete-red.svg"
+                                                alt="">
+                                        </button>
+                                    </div>
+                                    <div class="msg_date">
+                                        <span class="date">1402/07/25</span>
+                                        <span class="clock">17:01</span>
+                                        <img src="public/images/icons/Time-Circle.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- start brif section -->
+      <section class="brif">
+        <div class="container-fluid p-0 mx-0">
+          <div class="row p-0 mx-0">
+            <div class="col-12 p-0 mx-0">
+              <div class="brif_content">
+                <div class="brif_item">
+                  <p>
+                    برای درخواست مشاوره و پیشنهاد همکاری با شرکت برکه میتوانید
+                    از طریق فرم مشاوره با ما در تماس باشید.
+                  </p>
+                  <a href="#" class="btn btn_brif">فرم مشاوره</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- start footer -->
+      <footer>
+        <div class="footer_berkeh">
+          <div class="container">
+            <div class="row pb">
+              <div class="col-12 col-lg-4">
+                <div class="footer_item footer_contact-us">
+                  <div class="cu_title">
+                    <h4>راه‌های ارتباط با ما</h4>
+                  </div>
+                  <div class="cu_items">
+                    <ul class="cu_ul">
+                      <li class="cu_li">
+                        <span class="li_icons">
+                          <i class="fas fa-phone"></i>
+                        </span>
+                        <span class="li_content">
+                          021-22323745 021-22323746
+                        </span>
+                      </li>
+                      <li class="cu_li">
+                        <span class="li_icons">
+                          <i class="fas fa-at"></i>
+                        </span>
+                        <span class="li_content"> info@berkehtech.com </span>
+                      </li>
+                      <li class="cu_li">
+                        <span class="li_icons">
+                          <i class="fas fa-thumbtack"></i>
+                        </span>
+                        <span class="li_content">
+                          تهران - خیابان بنی‌هاشم - رو به روی پاساژ الماس
+                          بنی‌هاشم - کوچه سپید - مجتمع سپیده - طبقه 3 واحد 47
+                        </span>
+                      </li>
+                      <li class="cu_li">
+                        <span href="#" class="li_icons">
+                          <i class="fas fa-share-alt"></i>
+                        </span>
+                        <a href="#" class="w-color social_icons">
+                          <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="w-color social_icons">
+                          <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="w-color social_icons">
+                          <i class="fab fa-twitter"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-4">
+                <div class="footer_item footer_links">
+                  <div class="cu_title">
+                    <h4>لینک های مرتبط</h4>
+                  </div>
+                  <div class="cu_items">
+                    <ul class="cu_ul footer_menu">
+                      <li class="cu_li pb-li">
+                        <a href="#" class="li_content bolt">
+                          تماس با ما
+                          <span class="line_bottom"></span>
+                        </a>
+                      </li>
+                      <li class="cu_li pb-li">
+                        <a href="#" class="li_content bolt">
+                          درباره ما
+                          <span class="line_bottom"></span>
+                        </a>
+                      </li>
+                      <li class="cu_li pb-li">
+                        <a href="#" class="li_content bolt">
+                          مقالات
+                          <span class="line_bottom"></span>
+                        </a>
+                      </li>
+                      <li class="cu_li pb-li">
+                        <a href="#" class="li_content bolt">
+                          مشاوره
+                          <span class="line_bottom"></span>
+                        </a>
+                      </li>
+                      <li class="cu_li pb-li">
+                        <a href="#" class="li_content bolt">
+                          خدمات
+                          <span class="line_bottom"></span>
+                        </a>
+                      </li>
+                      <li class="cu_li pb-li">
+                        <a href="#" class="li_content bolt">
+                          نمونه کارها
+                          <span class="line_bottom"></span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-4">
+                <div class="footer_item footer_about">
+                  <div class="cu_title">
+                    <h4>درباره برکه</h4>
+                  </div>
+                  <div class="cu_items">
+                    <p>
+                      دانش نرم افزاری همچون آب حیات تکنولوژی آینده بشر است، از
+                      این رو ما برای دریا شدن تلاش می کنم تا بتوانیم جزو بهترین
+                      ها در راستای توسعه کسب و کار هوشمند، طراحی سایت، بازاریابی
+                      دیجیتالی، سئو و طراحی نرم افزار در جهت پیشبرد اهداف و
+                      رضایت مشتریان گام برمیداریم
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 text-center pt-3">
+                <p class="color-footer">ساخته شده توسط شرکت برکه</p>
+                <p class="text-light">
+                  تمامی حقوق مادی و معنوی این سایت متعلق به شرکت برکه میباشد
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- end footer -->
+    </div>
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="public/js/script.js"></script>
+    <script src="public/js/dashboard.js"></script>
+  </body>
+</html>
