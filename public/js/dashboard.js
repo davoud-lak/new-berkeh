@@ -43,9 +43,54 @@ $(document).ready(function () {
 
     $($object).find("img").attr("src", $show == 1 ? $hidePassword : $showPassword);
   }
+  // checkBox in setting page
+  $(".check_change_notification_method .check_box .label_check").on('click' , function (e) {
+    e.preventDefault();
+    $(this).toggleClass("active_check");
+  });
+
+   // handle show & hide tools in dashboard
+   $('#targetList .tools_btn').on('click', function(e){
+    e.preventDefault();
+    let $target = $(this).attr('data-target');
+    if ( $target == 'freepikTools') {
+      console.log('click')
+      $('.user_panel_status_content .tools_items .tools_box .value').hide(1);
+        $('.user_panel_status_content .tools_items .tools_box .freepikValue').show(200);
+        $('#targetList .tools_btn').removeClass('active_btn');
+        $(this).addClass('active_btn');
+    } else if ($target == "envatoTools") {
+        $('.user_panel_status_content .tools_items .tools_box .value').hide(1);
+        $('.user_panel_status_content .tools_items .tools_box .envatoValue').show(200);
+        $('#targetList .tools_btn').removeClass('active_btn');
+        $(this).addClass('active_btn');
+    } else {
+        $('.user_panel_status_content .tools_items .tools_box .envatoValue').show(200);
+        $(this).removeClass('active_btn');
+    }
+})
 });
-// checkBox in setting page
-$(".check_change_notification_method .check_box .label_check").on('click' , function (e) {
-  e.preventDefault();
-  $(this).toggleClass("active_check");
-});
+
+
+// daragging file in support ticket page for upload file
+const dropContainer = document.getElementById("dropcontainer")
+const fileInput = document.getElementById("fileUpload")
+
+dropContainer.addEventListener("dragover", (e) => {
+  // prevent default to allow drop
+  e.preventDefault()
+}, false)
+
+dropContainer.addEventListener("dragenter", () => {
+  dropContainer.classList.add("drag-active")
+})
+
+dropContainer.addEventListener("dragleave", () => {
+  dropContainer.classList.remove("drag-active")
+})
+
+dropContainer.addEventListener("drop", (e) => {
+  e.preventDefault()
+  dropContainer.classList.remove("drag-active")
+  fileInput.files = e.dataTransfer.files
+})

@@ -610,7 +610,7 @@ $(".frequently_asked_question_items .li_dashboard").click(function () {
 
 
 
-
+// animation text in header in index page
 if (document.querySelector("#starter_sentence") != null) {
   $sentence = $("#starter_sentence").val();
   $string = [];

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>dashboard</title>
+    <title>Ticket</title>
     <link
       rel="stylesheet"
       href="node_modules/bootstrap/dist/css/bootstrap.min.css"
@@ -85,7 +85,7 @@
         </div>
       </div>
       <!-- Start section -->
-      <section class="dashboard_page">
+      <section class="dashboard_page ticket_page">
         <div class="container-fluid">
           <div class="row">
             <div class="col-12 col-lg-3 position-relative">
@@ -167,158 +167,66 @@
               </div>
             </div>
             <div class="col-12 col-lg-9">
-              <div class="dashboard_content">
+              <div class="dashboard_content ticket_page_content">
                 <div class="header">
-                  <p>کاربر گرامی خلاصه وضعیت پنل شما به صورت زیر می‌باشد</p>
+                  <p>
+                    کاربر گرامی تیکت های گذشته خود را در بخش زیر مشاهده کنید
+                  </p>
+                  <a href="dashboard-new-ticket.html" class="new_ticket_btn"
+                    >ثبت تیکت جدید</a
+                  >
                 </div>
                 <div class="body">
-                  <div class="user_panel_status_content">
-                    <div class="header_section">
-                      <ul id="targetList" class="tools_list">
-                        <li
-                          class="tools_btn active_btn"
-                          data-target="freepikTools"
-                        >
-                          <img src="public/images/FreepikN.png" alt="" />
-                        </li>
-                        <li class="tools_btn" data-target="envatoTools">
-                          <img src="public/images/EnvatoN.png" alt="" />
-                        </li>
-                      </ul>
+                  <div class="message_section">
+                    <div class="title_section">
+                      <span>آخرین پیام های شما</span>
                     </div>
-                    <div class="tools_items">
-                      <div class="row">
-                        <div class="col-12 col-sm-6 col-xl-3">
-                          <div class="tools_box">
-                            <div
-                              class="tools_icon"
-                              style="background-color: #ffa6004d"
-                            >
-                              <img
-                                src="public/images/icons/download.svg"
-                                alt=""
-                              />
-                            </div>
-                            <div class="tools_info">
-                              <span class="topic">بیشترین دانلود</span>
-                              <strong class="value freepikValue">
-                                12
-                                <span class="period">(روزانه)</span>
-                              </strong>
-                              <strong
-                                class="value envatoValue"
-                                style="display: none"
-                              >
-                                19
-                                <span class="period">(روزانه)</span>
-                              </strong>
-                            </div>
+                    <div class="content_section">
+                      <div class="msg_box ticketBx">
+                        <div class="msg_items">
+                          <div class="msg">
+                            <span class="text">
+                              گزارش ایراد در ابزار سئوی و اختلال در عملکرد این
+                              ابزار
+                            </span>
                           </div>
+                          <a
+                            href="dashboard-new-ticket.html"
+                            class="see_details_msg"
+                            >نمایش</a
+                          >
                         </div>
-                        <div class="col-12 col-sm-6 col-xl-3">
-                          <div class="tools_box">
-                            <div
-                              class="tools_icon"
-                              style="background-color: #0008f74d"
-                            >
-                              <img
-                                src="public/images/icons/cloud-arrow-down.svg"
-                                alt=""
-                                style="width: 2rem"
-                              />
-                            </div>
-                            <div class="tools_info">
-                              <span class="topic">استفاده شده</span>
-                              <strong class="value freepikValue">
-                                0
-                                <span class="period">(روزانه)</span>
-                              </strong>
-                              <strong
-                                class="value envatoValue"
-                                style="display: none"
-                              >
-                                6
-                                <span class="period">(روزانه)</span>
-                              </strong>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-12 col-sm-6 col-xl-3">
-                          <div class="tools_box">
-                            <div
-                              class="tools_icon"
-                              style="background-color: #02bf514d"
-                            >
-                              <img
-                                src="public/images/icons/stopwatch.svg"
-                                alt=""
-                              />
-                            </div>
-                            <div class="tools_info">
-                              <span class="topic">باقی مانده</span>
-                              <strong class="value freepikValue">
-                                12
-                                <span class="period">(روز)</span>
-                              </strong>
-                              <strong
-                                class="value envatoValue"
-                                style="display: none"
-                              >
-                                10
-                                <span class="period">(روز)</span>
-                              </strong>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-12 col-sm-6 col-xl-3">
-                          <div class="tools_box">
-                            <div
-                              class="tools_icon"
-                              style="background-color: #02b9bf4d"
-                            >
-                              <img
-                                src="public/images/icons/calendar-arrow-down.svg"
-                                alt=""
-                              />
-                            </div>
-                            <div class="tools_info">
-                              <span class="topic">پایان سرویس</span>
-                              <strong class="value freepikValue">
-                                1402/08/24
-                              </strong>
-                              <strong
-                                class="value envatoValue"
-                                style="display: none"
-                              >
-                                1402/08/24
-                              </strong>
-                            </div>
-                          </div>
+                        <div class="msg_date">
+                          <span class="date">1402/07/07</span>
+                          <span class="clock">14:14</span>
+                          <img
+                            src="public/images/icons/Time-Circle.svg"
+                            alt=""
+                          />
                         </div>
                       </div>
-                    </div>
-                    <div class="add_link_form">
-                      <form action="#">
-                        <input
-                          type="text"
-                          name=""
-                          id="addLink"
-                          class="form-control"
-                          placeholder="لینک مورد نظر خود را وارد کنید"
-                        />
-                        <button type="submit"></button>
-                      </form>
-                      <div class="cardMsg">
-                        <p>
-                          لطفا کمی صبر نمایید، بسته به نوع فایل، دانلود ممکن است
-                          کمی طول بکشد.
-                        </p>
-                        <span class="loader"></span>
-                      </div>
-                      <div class="cardMsg errorMsg">
-                        <p>
-                          تعداد دانلود های شما برای امروز به پایان رسیده است.
-                        </p>
+                      <div class="msg_box ticketBx">
+                        <div class="msg_items">
+                          <div class="msg">
+                            <span class="text">
+                              به دلیل مشکلات فنی امکان خرید از درگاه بانک سامان
+                              تا 24 ساعت آینده امکان پذیر نمی‌باشد
+                            </span>
+                          </div>
+                          <a
+                            href="dashboard-new-ticket.html"
+                            class="see_details_msg"
+                            >نمایش</a
+                          >
+                        </div>
+                        <div class="msg_date">
+                          <span class="date">1402/06/25</span>
+                          <span class="clock">17:01</span>
+                          <img
+                            src="public/images/icons/Time-Circle.svg"
+                            alt=""
+                          />
+                        </div>
                       </div>
                     </div>
                   </div>

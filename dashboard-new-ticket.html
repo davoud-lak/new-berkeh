@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>dashboard</title>
+    <title>New ticket</title>
     <link
       rel="stylesheet"
       href="node_modules/bootstrap/dist/css/bootstrap.min.css"
@@ -85,7 +85,7 @@
         </div>
       </div>
       <!-- Start section -->
-      <section class="dashboard_page">
+      <section class="dashboard_page ticket_page">
         <div class="container-fluid">
           <div class="row">
             <div class="col-12 col-lg-3 position-relative">
@@ -167,158 +167,87 @@
               </div>
             </div>
             <div class="col-12 col-lg-9">
-              <div class="dashboard_content">
+              <div class="dashboard_content ticket_page_content">
                 <div class="header">
-                  <p>کاربر گرامی خلاصه وضعیت پنل شما به صورت زیر می‌باشد</p>
+                  <p>
+                    کاربر گرامی تیکت خود را ثبت کنید تا در اسرع وقت پاسخگوی شما
+                    باشیم
+                  </p>
                 </div>
                 <div class="body">
-                  <div class="user_panel_status_content">
-                    <div class="header_section">
-                      <ul id="targetList" class="tools_list">
-                        <li
-                          class="tools_btn active_btn"
-                          data-target="freepikTools"
-                        >
-                          <img src="public/images/FreepikN.png" alt="" />
-                        </li>
-                        <li class="tools_btn" data-target="envatoTools">
-                          <img src="public/images/EnvatoN.png" alt="" />
-                        </li>
-                      </ul>
+                  <div class="message_section">
+                    <div class="title_section">
+                      <span>ثبت پیام شما</span>
                     </div>
-                    <div class="tools_items">
-                      <div class="row">
-                        <div class="col-12 col-sm-6 col-xl-3">
-                          <div class="tools_box">
-                            <div
-                              class="tools_icon"
-                              style="background-color: #ffa6004d"
+                    <div class="content_section">
+                      <div class="sendTicketContent">
+                        <form action="#" class="ticketForm">
+                          <textarea
+                            name=""
+                            id=""
+                            class="form-control"
+                            cols="20"
+                            rows="5"
+                            placeholder="پیام خود را بنویسید..."
+                          ></textarea>
+                          <div class="fileUpload_input">
+                            <label
+                              for="fileUpload"
+                              class="drop-container"
+                              id="dropcontainer"
                             >
-                              <img
-                                src="public/images/icons/download.svg"
-                                alt=""
-                              />
-                            </div>
-                            <div class="tools_info">
-                              <span class="topic">بیشترین دانلود</span>
-                              <strong class="value freepikValue">
-                                12
-                                <span class="period">(روزانه)</span>
-                              </strong>
-                              <strong
-                                class="value envatoValue"
-                                style="display: none"
+                              <span class="drop-title"
+                                >فایل را اینجا بکشید</span
                               >
-                                19
-                                <span class="period">(روزانه)</span>
-                              </strong>
-                            </div>
+                              یا
+                              <input
+                                type="file"
+                                id="fileUplod"
+                                accept="image/*"
+                                required
+                              />
+                            </label>
                           </div>
+                          <button type="button">ارسال</button>
+                        </form>
+                      </div>
+                      <div class="ticketBox userTicketBx">
+                        <div class="messageBx">
+                          <p>
+                            اگر شما یک طراح هستین و یا با طراحی های گرافیکی
+                            سروکار دارید به متن های برخورده اید که با نام لورم
+                            ایپسوم شناخته می‌شوند.
+                          </p>
                         </div>
-                        <div class="col-12 col-sm-6 col-xl-3">
-                          <div class="tools_box">
-                            <div
-                              class="tools_icon"
-                              style="background-color: #0008f74d"
-                            >
-                              <img
-                                src="public/images/icons/cloud-arrow-down.svg"
-                                alt=""
-                                style="width: 2rem"
-                              />
-                            </div>
-                            <div class="tools_info">
-                              <span class="topic">استفاده شده</span>
-                              <strong class="value freepikValue">
-                                0
-                                <span class="period">(روزانه)</span>
-                              </strong>
-                              <strong
-                                class="value envatoValue"
-                                style="display: none"
-                              >
-                                6
-                                <span class="period">(روزانه)</span>
-                              </strong>
-                            </div>
+                        <div class="ticketInfo">
+                          <div class="avatar">
+                            <img
+                              src="public/images/icons/Iconly-Bold-Profile.svg"
+                              alt=""
+                            />
                           </div>
-                        </div>
-                        <div class="col-12 col-sm-6 col-xl-3">
-                          <div class="tools_box">
-                            <div
-                              class="tools_icon"
-                              style="background-color: #02bf514d"
-                            >
-                              <img
-                                src="public/images/icons/stopwatch.svg"
-                                alt=""
-                              />
-                            </div>
-                            <div class="tools_info">
-                              <span class="topic">باقی مانده</span>
-                              <strong class="value freepikValue">
-                                12
-                                <span class="period">(روز)</span>
-                              </strong>
-                              <strong
-                                class="value envatoValue"
-                                style="display: none"
-                              >
-                                10
-                                <span class="period">(روز)</span>
-                              </strong>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-12 col-sm-6 col-xl-3">
-                          <div class="tools_box">
-                            <div
-                              class="tools_icon"
-                              style="background-color: #02b9bf4d"
-                            >
-                              <img
-                                src="public/images/icons/calendar-arrow-down.svg"
-                                alt=""
-                              />
-                            </div>
-                            <div class="tools_info">
-                              <span class="topic">پایان سرویس</span>
-                              <strong class="value freepikValue">
-                                1402/08/24
-                              </strong>
-                              <strong
-                                class="value envatoValue"
-                                style="display: none"
-                              >
-                                1402/08/24
-                              </strong>
-                            </div>
-                          </div>
+                          <span class="userName">ساسان رضایی</span>
+                          <span class="messageDate">3 ساعت قبل</span>
                         </div>
                       </div>
-                    </div>
-                    <div class="add_link_form">
-                      <form action="#">
-                        <input
-                          type="text"
-                          name=""
-                          id="addLink"
-                          class="form-control"
-                          placeholder="لینک مورد نظر خود را وارد کنید"
-                        />
-                        <button type="submit"></button>
-                      </form>
-                      <div class="cardMsg">
-                        <p>
-                          لطفا کمی صبر نمایید، بسته به نوع فایل، دانلود ممکن است
-                          کمی طول بکشد.
-                        </p>
-                        <span class="loader"></span>
-                      </div>
-                      <div class="cardMsg errorMsg">
-                        <p>
-                          تعداد دانلود های شما برای امروز به پایان رسیده است.
-                        </p>
+                      <div class="ticketBox addminTicketBx">
+                        <div class="messageBx">
+                          <p>
+                            اگر شما یک طراح هستین و یا با طراحی های گرافیکی
+                            سروکار دارید به متن های برخورده اید که با نام لورم
+                            ایپسوم شناخته می‌شوند.
+                          </p>
+                        </div>
+                        <div class="ticketInfo">
+                          <div class="avatar">
+                            <img
+                              src="public/images/icons/Iconly-Bold-Profile.svg"
+                              alt=""
+                            />
+                          </div>
+                          <span class="userName">کارشناس پشتیبانی</span>
+                          <span class="messageDate">10 دقیقه قبل</span>
+                        </div>
                       </div>
                     </div>
                   </div>

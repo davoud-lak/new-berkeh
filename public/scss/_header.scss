@@ -105,25 +105,27 @@ header {
   }
 }
 
-.logo_login_items {
+.right_items {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
 
   .login_item {
-    margin-left: 3rem;
+    margin-right: 3rem;
     display: flex;
     align-items: center;
     @media screen and (max-width: 767.98px) {
-      margin-left: 1rem;
+      margin-right: 1rem;
     }
-
+  
     .login_btn {
       padding: 0.25rem;
       display: flex;
       align-items: center;
       position: relative;
-
+      // @media screen and (max-width: 575.98px){
+      //   font-size: 13px;
+      // }
+  
       &::before {
         content: url(../images/icons/user.svg);
         position: relative;

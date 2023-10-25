@@ -2,6 +2,7 @@
   padding: 10rem 1.5rem;
   position: relative;
   width: 100%;
+
   @media screen and (max-width: 575.98px) {
     padding: 10rem 0;
   }
@@ -66,7 +67,8 @@
 
         .li_list {
           margin-bottom: rem(30);
-          &:last-child{
+
+          &:last-child {
             margin-bottom: 0;
           }
 
@@ -137,6 +139,7 @@
     @media screen and (max-width: 991.98px) {
       min-height: auto;
     }
+
     @media screen and (max-width: 767.98px) {
       padding: rem(30) rem(15);
     }
@@ -896,7 +899,7 @@
         .pass {
           width: 3rem;
           height: 2.675rem;
-          background-color: #fff; 
+          background-color: #fff;
           border-radius: 0.125rem;
           border: 0;
           position: absolute;
@@ -929,18 +932,21 @@
       }
     }
   }
-  .forgot_pass{
+
+  .forgot_pass {
     display: inline-block;
     margin-top: 1.5rem;
     border-bottom: 1px solid var(--color-darkgreen);
     color: var(--color-darkgreen);
   }
 }
-.recoveryPassSection{
-  .login_card{
-    .card_header{
+
+.recoveryPassSection {
+  .login_card {
+    .card_header {
       display: block;
-      p{
+
+      p {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -950,4 +956,469 @@
       }
     }
   }
-} 
+}
+
+.ticket_page {
+  .ticket_page_content {
+    .header {
+      justify-content: space-between;
+
+      @media screen and (max-width: 575.98px) {
+        flex-direction: column;
+      }
+
+      .new_ticket_btn {
+        width: 9rem;
+        background: var(--color-primary);
+        color: #fff;
+        padding: 0.5rem 1rem;
+        text-align: center;
+        border-radius: 2rem;
+        line-height: 1.75rem;
+        transition: all 500ms;
+
+        @media screen and (max-width: 575.98px) {
+          width: 100%;
+          margin-top: 1rem;
+        }
+
+        &:hover {
+          box-shadow: 0 0 15px 0px #ccc;
+        }
+      }
+    }
+
+    .see_details_msg {
+      position: relative;
+      width: 5rem;
+      width: 5rem;
+      height: 2rem;
+      line-height: 2rem;
+      background: var(--color-darkgreen);
+      color: #fff;
+      font-size: 12px;
+      border-radius: 2rem;
+
+      &::before {
+        content: url(../images/icons/eye-white.svg);
+        display: inline-block;
+        width: 12px;
+        position: relative;
+        top: 0.125rem;
+        right: 0.625rem;
+        margin-left: 0.975rem;
+      }
+    }
+
+    .ticketBox {
+      position: relative;
+      margin-bottom: 5rem;
+
+      .messageBx {
+        position: relative;
+        right: 3rem;
+        width: 90%;
+        padding: 2rem 1.5rem;
+        border-radius: 1.25rem 1.25rem 0 1.25rem;
+        box-shadow: 0 0 20px 0 var(--color-shadow);
+
+        @media screen and (max-width: 575.98px) {
+          right: 2rem;
+          padding: 2rem 1rem;
+        }
+
+        p {
+          line-height: 1.75rem;
+        }
+      }
+
+      .ticketInfo {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        .avatar {
+          width: 3rem;
+          height: 3rem;
+          border-radius: 50%;
+          background-image: linear-gradient(320deg, var(--color-primary), var(--color-darkgreen));
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-left: 1rem;
+
+          img {
+            width: 2rem;
+          }
+        }
+
+        .userName {
+          font-size: 13px;
+          color: var(--text-secondry);
+          margin-left: 0.75rem;
+        }
+
+        .messageDate {
+          font-size: 12px;
+          color: var(--text-secondry);
+          padding-right: 0.75rem;
+          border-right: 1px solid #777;
+          line-height: 1rem;
+        }
+      }
+    }
+
+    .userTicketBx {
+      .messageBx {
+        background-color: var(--color-darkgreen);
+        color: #fff;
+      }
+    }
+
+    .addminTicketBx {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+
+      .messageBx {
+        right: unset;
+        left: 3rem;
+        border-radius: 1.25rem 1.25rem 1.25rem 0;
+        background-color: #02b8bf17;
+        color: var(--text-secondry);
+
+        @media screen and (max-width: 575.98px) {
+          left: 2rem;
+        }
+      }
+
+      .ticketInfo {
+        flex-direction: row-reverse;
+
+        .avatar {
+          margin-right: 1rem;
+          margin-left: 0;
+        }
+
+        .userName {
+          margin-right: 0.75rem;
+          margin-left: 0;
+        }
+
+        .messageDate {
+          padding-left: 0.75rem;
+          margin-right: 0;
+          border-left: 1px solid #777;
+          border-right: 0;
+        }
+      }
+    }
+
+    .sendTicketContent {
+      margin: 3rem 0 5rem;
+
+      .fileUpload_input {
+        position: relative;
+        margin-bottom: 2rem;
+      }
+
+      .ticketForm {
+        width: 100%;
+
+        textarea {
+          min-height: 12rem;
+          resize: none;
+          margin-bottom: 2rem;
+        }
+
+        button {
+          width: 10rem;
+          height: 3rem;
+          border-radius: 2rem;
+          text-align: center;
+          line-height: 3rem;
+          background-color: var(--color-primary);
+          border: 0;
+          color: var(--color-darkgreen);
+          transition: all 500ms;
+
+          &:hover {
+            box-shadow: 0 0 15px #ccc;
+          }
+
+          @media screen and (max-width: 575.98px) {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+.drop-container {
+  position: relative;
+  display: flex;
+  gap: 0.5rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 12rem;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  border: 2px dashed var(--color-primary);
+  color: var(--color-darkgreen);
+  cursor: pointer;
+  transition: background .2s ease-in-out, border .2s ease-in-out;
+}
+
+.drop-container:hover,
+.drop-container.drag-active {
+  background: #def9f6;
+  border-color: var(--color-darkgreen);
+}
+
+.drop-container:hover .drop-title,
+.drop-container.drag-active .drop-title {
+  color: var(--color-darkgreen);
+}
+
+.drop-title {
+  color: var(--color-primary);
+  font-size: 18px;
+  text-align: center;
+  transition: color .2s ease-in-out;
+}
+
+input[type=file] {
+  position: relative;
+  width: 350px;
+  max-width: 100%;
+  height: 3.5rem;
+  color: #444;
+  padding: 5px;
+  background: #fff;
+  border-radius: 10px;
+  border: 1px solid #777;
+
+  &::before {
+    content: 'آپلود فایل';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 8.2rem;
+    height: 2.925rem;
+    border-radius: 0.75rem;
+    background: var(--color-primary);
+    color: var(--color-darkgreen);
+    font-size: 16px;
+    top: 0.225rem;
+    cursor: pointer;
+    transition: background .2s ease-in-out;
+  }
+
+}
+
+input[type=file]::file-selector-button {
+  height: 2.5rem;
+  border: none;
+  background: #fff;
+  padding: 0.625rem 1.2rem;
+  margin-right: unset;
+  border-radius: 0.75rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+.user_panel_status_content {
+  .header_section {
+    margin: 2rem 0 4rem;
+
+    .tools_list {
+      display: flex;
+      justify-content: center;
+
+      .tools_btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 7rem;
+        height: 4rem;
+        border-radius: 0.5rem;
+        border: 2px solid var(--color-darkgreen);
+        margin-left: 2rem;
+        -webkit-filter: grayscale(1);
+        filter: grayscale(1);
+        overflow: hidden;
+        cursor: pointer;
+        transition: all 500ms;
+
+        &:last-child {
+          margin-left: 0;
+        }
+
+        img {
+          width: 100%;
+          border-radius: 0.5rem;
+          transition: all 500ms;
+        }
+
+        &:hover {
+          border-color: var(--color-primary);
+          -webkit-filter: none;
+          filter: none;
+
+          img {
+            transform: scale(1.1);
+          }
+        }
+      }
+
+      .active_btn {
+        border-color: var(--color-primary);
+        -webkit-filter: none;
+        filter: none;
+      }
+    }
+  }
+
+  .tools_items {
+    margin-bottom: 3rem;
+
+    .tools_box {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      min-height: 9rem;
+      padding: 1rem;
+      border-radius: 1rem;
+      background-color: #fff;
+      box-shadow: 0 0 15px 0 var(--color-shadow);
+      margin-bottom: 2rem;
+
+      .tools_icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 5rem;
+        height: 5rem;
+        border-radius: 0.5rem;
+
+        img {
+          width: 1.5rem;
+        }
+      }
+
+      .tools_info {
+        display: flex;
+        flex-direction: column;
+        padding-right: 1rem;
+        justify-content: center;
+        min-width: 5rem;
+
+        .topic {
+          font-size: 17px;
+          color: #444;
+          margin-bottom: 0.5rem;
+        }
+      }
+    }
+  }
+
+  .add_link_form {
+    form {
+      width: 100%;
+      display: flex;
+      margin-bottom: 3rem;
+      input {
+        height: 4rem;
+        border-radius: 0 0.25rem 0.25rem 0;
+        &:focus {
+          box-shadow: unset;
+        }
+        &::placeholder {
+          color: #ced4da;
+        }
+      }
+
+      button {
+        width: 5rem;
+        margin-right: -1rem;
+        background: var(--color-primary);
+        border-radius: 0.25rem 0 0 0.25rem;
+        border: 1px solid var(--color-primary);
+
+        &::after {
+          content: url(../images/icons/hand-pointer.svg);
+          width: 1.5rem;
+          margin: auto;
+          display: block;
+          margin-bottom: -4px;
+        }
+      }
+    }
+    .cardMsg{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      border-radius: 0.25rem;
+      padding: 1rem 1.5rem;
+      margin-bottom: 1rem;
+      text-align: center;
+      background-color: #def9f6;
+      color: var(--color-primary);
+      .loader {
+        width: 1.5rem;
+        height: 1.5rem;
+        border-radius: 50%;
+        display: inline-block;
+        margin-right: 0.5rem;
+        border-top: 3px solid var(--color-darkgreen);
+        border-right: 3px solid transparent;
+        box-sizing: border-box;
+        animation: rotation 1s linear infinite;
+      }
+      .loader::after {
+        content: '';  
+        box-sizing: border-box;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 1.5rem;
+        height: 1.5rem;
+        border-radius: 50%;
+        border-left: 3px solid var(--color-primary);
+        border-bottom: 3px solid transparent;
+        animation: rotation 0.5s linear infinite reverse;
+      }
+      @keyframes rotation {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      } 
+    }
+    .errorMsg{
+      background-color: #ef233e40;
+      color: var(--color-red);
+    }
+  }
+}
+.googleAcount{
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--color-shadow);
+  border-radius: 0.5rem;
+  margin-top: 2rem;
+  cursor: pointer;
+  svg{
+    width: 1.5rem;
+    margin-right: 0.5rem;
+  }
+}
