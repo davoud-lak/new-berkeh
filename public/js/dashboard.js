@@ -56,16 +56,16 @@ $(document).ready(function () {
     if ( $target == 'freepikTools') {
       console.log('click')
       $('.user_panel_status_content .tools_items .tools_box .value').hide(1);
-        $('.user_panel_status_content .tools_items .tools_box .freepikValue').show(200);
+        $('.user_panel_status_content .tools_items .tools_box .freepikValue').show(1);
         $('#targetList .tools_btn').removeClass('active_btn');
         $(this).addClass('active_btn');
     } else if ($target == "envatoTools") {
         $('.user_panel_status_content .tools_items .tools_box .value').hide(1);
-        $('.user_panel_status_content .tools_items .tools_box .envatoValue').show(200);
+        $('.user_panel_status_content .tools_items .tools_box .envatoValue').show(1);
         $('#targetList .tools_btn').removeClass('active_btn');
         $(this).addClass('active_btn');
     } else {
-        $('.user_panel_status_content .tools_items .tools_box .envatoValue').show(200);
+        $('.user_panel_status_content .tools_items .tools_box .envatoValue').show(1);
         $(this).removeClass('active_btn');
     }
 })
