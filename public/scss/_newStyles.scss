@@ -692,3 +692,100 @@
 .pt_full_screen {
     padding-top: 0;
 }
+.border-bottom-dashed{
+    border-bottom: 1px dashed #7381AB;
+}
+.txt-darkBlueColor{
+    color: #0B3A42;
+}
+.txt-20{
+    font-size: 20px;
+}
+.mb-10{
+    margin-bottom: 5rem;
+}
+.height-5{
+    height: 2.5rem;
+}
+.width-182{
+    width: 182px;
+}
+.border-color-blue{
+    color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+}
+.border-color-blue:hover{
+    background-color: var(--color-primary);
+}
+.btn-bg-primary{
+    background-color: var(--color-primary);
+    color: #fff;
+}
+.tableSeo {
+    margin-top: 7rem;
+    .heading{
+        min-height: 3rem;
+        line-height: 3rem;
+        background-color: var(--color-darkgreen);
+        border: 1px solid var(--color-darkgreen);
+        font-size: 20px;
+        font-weight: 400;
+        @media screen and (max-width: 991.98px) {
+            font-size: 18px;
+        }
+    }
+    .bodyTable{
+        border: 1px solid #000;
+        border-top: 0;
+        .tableItem{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px dashed #000;
+            min-height: 3.5rem;
+            &:last-child{
+                border-bottom: 0;
+            }
+            .title_item{
+                width: 90%;
+                padding-right: 1rem;
+                padding-left: 0.5rem;
+                .num{
+                    &::after{
+                        content: ")";
+                        margin-left: 0.25rem;
+                    }
+                }
+            }
+            .checkBx{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 4rem;
+                min-height: 3.5rem;
+                border-right: 1px solid #000;
+            }
+            .tick{
+                &:after{
+                    content: url(../images/icons/tick.svg);
+                    margin-bottom: -0.5rem;
+                }
+            }
+            .star{
+                &:after{
+                    content: url(../images/icons/star.svg);
+                    margin-bottom: -0.5rem;
+                }
+            }
+        }
+    }
+    .footerTable{
+        @extend .heading;
+        background-color: #fff;
+        border-top: 0;
+        font-size: 18px;
+    }
+    .colorPrimary{
+        color: var(--color-primary);
+    }
+}
