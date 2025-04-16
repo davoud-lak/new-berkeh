@@ -789,3 +789,11 @@
         color: var(--color-primary);
     }
 }
+#personalModal{
+    textarea{
+        &::placeholder{
+            opacity: 0.5;
+            font-size: 1rem;
+        }
+    }
+}

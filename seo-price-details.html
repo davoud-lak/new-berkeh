@@ -122,7 +122,8 @@
                                 </div>
                                 <div class="button d-flex ">
                                     <a href="#" class="btn sent_btn width-182">درخواست مشاوره</a>
-                                    <a href="#" class="btn sent_btn width-182 btn-bg-primary mr-4">ثبت سفارش</a>
+                                    <a href="#" class="btn sent_btn width-182 btn-bg-primary mr-4 modal_btn" data-bs-toggle="modal"
+                                    data-bs-target="#personalModal">ثبت سفارش</a>
                                 </div>
                             </div>
                         </div>
@@ -349,6 +350,38 @@
             </div>
         </footer>
         <!-- end footer -->
+         <!-- Modal -->
+        <div class="modal fade" id="personalModal" tabindex="-1" aria-labelledby="personalModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="fal fa-times"></i></button>
+                </div>
+                <div class="modal-body">
+                    <form action="#" class="personal_form">
+                        <div class="form_item">
+                            <input type="text" name="name" class="form-control" placeholder="نام و نام خانوادگی">
+                        </div>
+                        <div class="form_item">
+                            <input type="tel" name="phone" class="form-control text-left" placeholder="شماره همراه">
+                        </div>
+                        <div class="form_item">
+                            <input type="url" name="email" class="form-control text-left" placeholder="آدرس سایت">
+                        </div>
+                        <div class="form_item mt-4">
+                            <textarea name="" id="" class="form-control" placeholder="کلمات کلیدی سایت شما(اختیاری)"></textarea>
+                        </div>
+                        <div class="mb-4">
+                            <span>مبلغ پرداختی: </span>
+                            <span class="font-weight-bold">50,000,000 تومان</span>
+                        </div>
+                        <button type="submit" class="more_btn w-50">پرداخت</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
     </div>
 
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
